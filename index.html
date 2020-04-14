@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Welcome to KfW Group</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+@media only print, screen and (min-width: 960px) {
+  .header__logo {
+    margin-right: auto; }
+    [data-is-sticky-header="true"] .header__logo {
+      display: none; } }
+
+.header__logo > img {
+  height: 39px;
+  width: 178px;
+  max-height: 70px;
+  margin-bottom: 0; }
+  @media only print, screen and (min-width: 960px) {
+    .header__logo > img {
+      height: 100%;
+      width: 181px;
+      margin-left: -5px; } }
+  @media only print, screen and (min-width: 1280px) {
+    .header__logo > img {
+      height: 100%;
+      width: 193px; } }
+
+.header__logo--preview {
+  display: none; }
+  @media only print, screen and (min-width: 960px) {
+    .header__logo--preview {
+      display: block; } }
+</style>
+  <link rel="shortcut icon" href="https://www.kfw.de/templatemedia/img/favicon.ico">
+</head>
+
+<body>
+
+<div class="header__logo">
+<a href="https://www.kfw.de/kfw.de-2.html" data-section="header">
+<picture class="header__logo">
+<source media="(min-width: 960px)" srcset="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_1280-2x.svg" type="image/svg+xml">
+<source srcset="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_320-2x.svg" type="image/svg+xml">
+<img src="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_1280-2x.png" alt="KfW - Logo - KfW Bankengruppe">
+</picture>
+</a>
+</div>
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="879ed37a-3564-434d-8196-3dab5e74a2da_x.png"
+  intent="WELCOME"
+  chat-title="KfW IT Helpdesk Chatbot Prototyp"
+  agent-id="48a05945-5b98-496c-a274-cc4d13c10154"
+  language-code="de"
+></df-messenger>
+      
+</body>
+</html>
